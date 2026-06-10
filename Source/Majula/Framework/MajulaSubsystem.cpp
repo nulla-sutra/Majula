@@ -3,7 +3,10 @@
 
 #include "Majula/Framework/MajulaSubsystem.h"
 
+#include "Algo/Copy.h"
 #include "Algo/MaxElement.h"
+#include "Engine/World.h"
+#include "GameFramework/Pawn.h"
 #include "Majula/Core/Zone/MajulaZoneVolume.h"
 #include "Majula/Core/Zone/MajulaZoneRule.h"
 #include "Majula/Framework/MajulaManager.h"

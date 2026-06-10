@@ -3,6 +3,8 @@
 
 #include "Majula/Core/Agent/MajulaAgentStrategy.h"
 
+#include "Engine/BlueprintGeneratedClass.h"
+
 void UMajulaAgentStrategy::GetLifetimeReplicatedProps(TArray<class FLifetimeProperty>& OutLifetimeProps) const
 {
     UObject::GetLifetimeReplicatedProps(OutLifetimeProps);

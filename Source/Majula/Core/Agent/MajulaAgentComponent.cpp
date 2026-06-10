@@ -3,6 +3,7 @@
 
 #include "Majula/Core/Agent/MajulaAgentComponent.h"
 
+#include "GameFramework/Controller.h"
 #include "Majula/Core/Agent/MajulaAgentStrategy.h"
 #include "Net/UnrealNetwork.h"
 #include "Net/Core/PushModel/PushModel.h"

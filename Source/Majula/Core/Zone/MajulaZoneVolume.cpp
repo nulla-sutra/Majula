@@ -4,6 +4,7 @@
 #include "Majula/Core/Zone/MajulaZoneVolume.h"
 
 #include "Components/BrushComponent.h"
+#include "Engine/CollisionProfile.h"
 #include "Majula/Framework/MajulaSubsystem.h"
 #include "Net/UnrealNetwork.h"
 

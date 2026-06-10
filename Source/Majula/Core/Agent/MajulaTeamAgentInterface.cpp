@@ -2,6 +2,8 @@
 
 
 #include "Majula/Core/Agent/MajulaTeamAgentInterface.h"
+
+#include "GameFramework/Controller.h"
 #include "Majula/Core/Agent/MajulaAgentComponent.h"
 #include "Majula/Core/Agent/MajulaAgentStrategy.h"
 

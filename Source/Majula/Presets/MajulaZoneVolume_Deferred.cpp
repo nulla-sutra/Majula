@@ -3,6 +3,8 @@
 
 #include "Majula/Presets/MajulaZoneVolume_Deferred.h"
 
+#include "TimerManager.h"
+#include "GameFramework/Pawn.h"
 #include "Net/UnrealNetwork.h"
 #include "Net/Core/PushModel/PushModel.h"
 

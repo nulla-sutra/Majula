@@ -3,6 +3,8 @@
 
 #include "Majula/Helpers/MajulaLibrary.h"
 
+#include "GameFramework/Pawn.h"
+#include "GameFramework/PlayerController.h"
 #include "GameFramework/PlayerState.h"
 #include "Majula/Core/Agent/MajulaAgentStrategy.h"
 #include "Majula/Core/Agent/MajulaTeamAgentInterface.h"
