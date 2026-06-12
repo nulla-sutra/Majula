@@ -14,26 +14,27 @@ class IMajulaZoneInterface;
 UCLASS(NotPlaceable, BlueprintInternalUseOnly)
 class MAJULA_API AMajulaManager : public AActor
 {
-    GENERATED_BODY()
+	GENERATED_BODY()
 
 public:
-    // Sets default values for this actor's properties
-    AMajulaManager();
+	// Sets default values for this actor's properties
+	AMajulaManager();
 
 protected:
-    // Called when the game starts or when spawned
-    virtual void BeginPlay() override;
-    virtual void PostNetReceive() override;
-    virtual void GetLifetimeReplicatedProps(TArray<class FLifetimeProperty>& OutLifetimeProps) const override;
-#if UE_WITH_IRIS
-    virtual void RegisterReplicationFragments(UE::Net::FFragmentRegistrationContext& Context,
-                                              UE::Net::EFragmentRegistrationFlags RegistrationFlags) override
-    {
-        UE::Net::FReplicationFragmentUtil::CreateAndRegisterFragmentsForObject(this, Context, RegistrationFlags);
-    };
-#endif
+	// Called when the game starts or when spawned
+	virtual void BeginPlay() override;
 
 public:
-    UPROPERTY(Replicated)
-    TArray<TObjectPtr<AActor>> UnboundZones;
+	virtual void PostNetReceive() override;
+	virtual void GetLifetimeReplicatedProps(TArray<class FLifetimeProperty>& OutLifetimeProps) const override;
+#if UE_WITH_IRIS
+	virtual void RegisterReplicationFragments(UE::Net::FFragmentRegistrationContext& Context,
+	                                          UE::Net::EFragmentRegistrationFlags RegistrationFlags) override
+	{
+		UE::Net::FReplicationFragmentUtil::CreateAndRegisterFragmentsForObject(this, Context, RegistrationFlags);
+	};
+#endif
+
+	UPROPERTY(Replicated)
+	TArray<TObjectPtr<AActor>> UnboundZones;
 };
