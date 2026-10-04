@@ -10,7 +10,7 @@
 
 UMajulaAgentComponent* IMajulaTeamAgentInterface::GetTeamAgentComponent() const
 {
-    const auto Controller = Cast<AController>(_getUObject());
+    const auto Controller = Cast<AController>(this);
     if (Controller == nullptr)
     {
         checkNoEntry();
