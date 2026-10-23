@@ -1,6 +1,6 @@
 ﻿// Copyright Epic Games, Inc. All Rights Reserved.
 
-#include "Majula.h"
+#include "Majula/Majula.h"
 
 #define LOCTEXT_NAMESPACE "FMajulaModule"
 

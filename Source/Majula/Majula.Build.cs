@@ -6,7 +6,10 @@ public class Majula : ModuleRules
 {
 	public Majula(ReadOnlyTargetRules Target) : base(Target)
 	{
-		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
+		PCHUsage = PCHUsageMode.Default;
+
+		// Resolve module-qualified headers through Unreal's parent include paths.
+		bLegacyParentIncludePaths = true;
 		SetupIrisSupport(Target);
 
 		PublicIncludePaths.AddRange(

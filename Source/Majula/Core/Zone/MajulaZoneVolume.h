@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "MajulaZoneInterface.h"
+#include "Majula/Core/Zone/MajulaZoneInterface.h"
 #include "GameFramework/Volume.h"
 #include "StructUtils/InstancedStruct.h"
 
